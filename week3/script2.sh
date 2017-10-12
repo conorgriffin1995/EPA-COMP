@@ -9,3 +9,6 @@ if [ $cnt -le 2 ]; then
   # some action
   echo "Too few CPUs, exiting"
 fi
+
+echo "hello $USER"
+echo "$HOME"
