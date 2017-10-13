@@ -1,0 +1,33 @@
+EPA CA1	Conor Griffin	X00111602
+
+Q1.
+First change to /usr/bin
+
+cd /usr/bin
+
+then enter the command..
+ 
+ls -al
+
+Q2.
+The user epa has been denied access to this folder because the permissions are set so that no users can access the Downloads folder.
+A soultion to this is to change permissions by entering the following command
+
+chmod u+x Downloads
+
+Q3.
+The problem here is a variable $1 is set to be passed in when running the script.
+If a variable is not passed in when running the script you get an error because an variable is expected.
+The solution to this is to pass in a variable like so,
+
+./cpu_count.sh 1
+
+O4.
+pwd | wc /home
+
+Q5.
+The problem here is $dirA has been set to a string not an integer,
+in order for this expression to work we mist change the operator in the if statement on line 6 to test if a string is equal to another string not an integer.
+line 6 must be changed to = operator.
+
+if [ $dirA = $dirB ]

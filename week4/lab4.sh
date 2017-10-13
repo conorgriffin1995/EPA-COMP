@@ -2,7 +2,7 @@
 
 cnt=`grep processor /proc/cpuinfo | wc -l`
 
-if [ $cnt -le $1 ]; then
+if [ $cnt -eq $1 ]; then
 
   echo "Not enough CPUS, exiting"
 
