@@ -1,0 +1,3 @@
+this goes to a file trucating it first
+this goes to a file appending it
+Fri 24 Nov 10:52:47 GMT 2017 this goes to a file appending it

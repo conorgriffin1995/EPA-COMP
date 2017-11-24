@@ -1,0 +1,16 @@
+accessing root
+su
+rootpasswd
+dnf install sysstat
+dnf install gcc-c++
+dnf install jq
+
+mpstat -o JSON | jq '.sysstat '
+mpstat -o JSON | jq '.hosts[0]'
+mpstat -o JSON | jq '.sysstat.hosts[0]'
+mpstat -o JSON | jq '.sysstat.hosts[0].machine'
+mpstat -o JSON | jq '.sysstat.hosts[0]."cpu-load"[0]'
+mpstat -o JSON | jq '.sysstat.hosts[0].statistics[0]."cpu-load"[0]'
+mpstat -o JSON | jq '.sysstat.hosts[0].statistics[0]."cpu-load"[0].idle'
+
+mpstat 10 1 -o JSON | jq '100 - sysstat.hosts[0].statistics[0]."cpu-load"[0]'
