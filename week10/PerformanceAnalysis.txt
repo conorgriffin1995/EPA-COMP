@@ -1,0 +1,98 @@
+X00111602
+Conor Griffin
+
+QUESTION1.
+T=1800
+C0=5400
+CDisk=18900
+UDisk=0.4
+
+i) Average i/o operations per transaction on disk?
+Udisk=Cdisk/C0
+Udisk=18900/5400
+Udisk=3.5
+
+ii) Average service time per transaction on this disk?
+Udisk=Sdisk x Xdisk
+Sdisk=18900/1800
+Sdisk=0.038
+
+
+QUESTION2.
+T=3600
+C0=5400
+Sdisk=0.03
+Vdisk=3
+
+i) What is the average num of accesses to this disk per file request?
+Udisk=Cdisk/C0
+Ui = Si x Xi
+Udisk = Sdisk x Xdisk
+Udisk = 0.03 x Xi
+
+Xi = Vi x X0
+Xi = 3 x X0
+
+X0 = C0/T
+X0 = 5400/3600
+X0 = 1.5
+
+Xi = 3 x 1.5
+Xi = 4.5
+
+Udisk = 0.03 x 4.5
+Udisk = 0.135
+
+
+Question3.
+File server
+T=3600
+C0=7200
+Udisk=0.3
+Sdisk=0.03
+Vdisk = ??
+
+Xi = Vi x X0
+Vi = Xi/X0
+Vi = 0.3/X0
+
+X0 = C0/T
+X0 = 7200/3600
+X0 = 2
+
+Vi = 0.3/2
+Vi = 0.15
+
+Average number of accesses to this disk per file request = 0.15
+
+
+QUESTION4.
+T = 3600
+C0 = 7200
+Ucpu = 0.32
+Udisk1 = 0.6
+
+Throughput: Xi = Ci / T
+
+//Thats all I have so far, not sure where to go on from here..
+
+QUESTION5.
+Average Delay = 0.1 = R->Response Time
+Average number of packets per second = 128 = X
+
+Number of concurrent users N = XR
+N = 128(0.1)
+N = 12.8
+
+
+QUESTION6.
+Interactive response time law
+R = M/X0 - Z
+M = 50
+Z = 5
+
+X0 = C0/T
+
+//Thats all I have so far, not sure where to  go from here..
+
+
