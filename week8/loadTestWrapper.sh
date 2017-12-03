@@ -11,4 +11,4 @@
 sleep $2
 
 # kill the loadtest
-pkill laodtest
+pkill loadtest
