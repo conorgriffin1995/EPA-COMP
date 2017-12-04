@@ -1,0 +1,5 @@
+# min hr dom mon dow
+# * * * * * /home/conorgriffin/Documents/EPA-COMP/CA2_Practice/tmptest.sh
+# * * * * * /home/conorgriffin/Documents/EPA-COMP/CA2_Practice/json.sh
+# * * * * * echo "hello $USER" >> /home/conorgriffin/Documents/EPA-COMP/CA2_Practice/file.txt 
+

@@ -20,6 +20,6 @@ echo "using jq to subtract from 100 to identify utiliztion of the cpu and idle t
 results=`mpstat 10 1 -o JSON | jq '100 - .sysstat.hosts[0].statistics[0]."cpu-load"[0].idle'`
 echo "$results"
 
-echo -e "idle\n$results" >> results.dat
+echo -e "idle\n$results" >> /home/conorgriffin/Documents/EPA-COMP/CA2_Practice/results.dat
 
 

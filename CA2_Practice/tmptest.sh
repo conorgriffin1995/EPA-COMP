@@ -7,7 +7,7 @@ echo "counting files in /tmp folder"
 
 if [ $cnt -ge $maxnum ]
 then
-	echo "`date` Max number of files ($cnt) exceeded in /tmp" >> log.txt
+	echo "`date` Max number of files ($cnt) exceeded in /tmp" >> /home/conorgriffin/Documents/EPA-COMP/CA2_Practice/log.txt
 fi
 
 
