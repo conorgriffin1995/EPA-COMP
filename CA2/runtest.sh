@@ -17,15 +17,15 @@ idle=`mpstat 5 1 -o JSON | jq '.sysstat.hosts[0].statistics[0]."cpu-load"[0].idl
 echo "$idle"
 
 # kill the loadtest
-echo "loadtest $i is being killed.."
+echo "loadtest $i killed.."
 pkill loadtest
 
-# number of completions in synthetic.dat
+# write the number of completions in synthetic.dat
 C=`cat synthetic.dat | wc -l`
 
 echo -e "$C \t $i \t $idle" >> results.dat
 
-# remove synthetic.dat file each time in the loop for new number of completions
+# remove synthetic.dat file each time in the loop for new file to be generated
 rm synthetic.dat
 
 done
